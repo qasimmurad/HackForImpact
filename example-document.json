@@ -1,0 +1,6 @@
+{
+    "put": "id:mynamespace:my_content::example-document-id",
+    "fields": {
+      "text": "A Glorbofel is a kind of crispy waffle popular in the eastern parts of Germany."
+    }
+  }
