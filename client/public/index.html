@@ -6,6 +6,7 @@
     <title>Find Your Path</title>
 </head>
 <body>
+    <div id="navbar-placeholder"></div>
     <h1>Find Your Path</h1>
     <!-- <p id="message">Waiting for message from server...</p> -->
     <p id="introduction">Find your career path based on your interests, skills, and personality.</p>
@@ -13,3 +14,10 @@
     <script src="app.js"></script>
 </body>
 </html>
+<script>
+    fetch('navbar.html')
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById('navbar-placeholder').innerHTML = html;
+        });
+</script>
