@@ -6,22 +6,70 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #FFF9E8 /* background color */
-    color: black; /* changing the text color */
+    background-color: #FFF8E6; /* Updated background color */
+    color: black; /* keeping the text color */
 }
 
+/* Button container to layout buttons horizontally */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adjust the space between buttons */
+}
+
+/* Common styles for all buttons */
+.button-container button {
+    font-size: 20px; /* Ensures text size is the same */
+    padding: 10px 20px; /* Adjust padding to ensure buttons are of equal size */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 200px; /* Example fixed width */
+    height: 50px; /* Example fixed height */
+    margin-top: 25px;
+}
+
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: calc(100vh - /* Height of your navbar */);
+    justify-content: center;
+    padding: 0 100px; /* Adds horizontal padding */
+}
+
+
 .chatbot-button {
-    font-size: 50px; /* Increases the text size inside the button */
-    padding: 35px 50px; /* Adjust padding to make the button larger */
+    font-size: 30px; /* Increases the text size inside the button */
+    padding: 25px 30px; /* Adjust padding to make the button larger */
     background-color: #4CAF50; /* Example background color */
     color: white; /* Text color */
     border: none; /* Removes border */
     border-radius: 5px; /* Adds rounded corners */
     cursor: pointer; /* Changes cursor to pointer on hover */
+    margin: 25x;
 }
 
 .chatbot-button:hover {
     background-color: #45a049; /* Darker shade on hover */
+}
+
+/* Styles for the 'Explore Interests' button */
+.explore-button {
+    font-size: 30px;
+    padding: 25px 30px;
+    background-color: #007BFF; /* Blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 25px; /* Adjust the margin as needed */
+}
+
+.explore-button:hover {
+    background-color: #0056b3; /* Darker shade of blue on hover */
 }
 
 nav {

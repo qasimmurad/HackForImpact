@@ -1,19 +1,48 @@
 <!DOCTYPE html>
+<link rel="stylesheet" href="style.css"> <!-- Adjust the href value to your CSS file's path -->
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Find Your Path</title>
 </head>
+
 <body>
-    <div id="navbar-placeholder"></div>
+<div id="navbar-placeholder"></div>
+<div class="content-container">
     <h1>Find Your Path</h1>
-    <!-- <p id="message">Waiting for message from server...</p> -->
-    <p id="introduction">Find your career path based on your interests, skills, and personality.</p>
-    <button class="chatbot-button" onclick="window.location.href = 'http://localhost:3000';">Go to Chatbot</button>
-    <script src="app.js"></script>
+    <p id="introduction">About:<br><br> This is a tool that can be used to help you find a potential career path based on your
+        interests, skills, and personality. It works by providing a response that is based on what is shared.
+        The tool is open to be used in whatever way your heart desires. <br></p>
+    <p id="instructions">Instructions (example of how to use):<br> <br>
+        1. To receive your personalized career recommendation: complete the game you are directed to
+        after pressing the button labeled 'Explore Interests'
+        <br>
+
+        <br>
+        2. Once you have completed the first step: Click on the button 'Learn More'. Feel free to ask questions
+        regarding the best career for you and the types of jobs that exist in that career. If you want
+        to learn more about specific jobs, feel free to do that as well. The tool is open to your thoughts
+        as well; so, if you dislike a part of a job, then share that.
+        <br>
+
+        <br>
+        3. Have fun exploring!
+        <br><br>
+        </p>
+    <div class="button-container">
+        <button class="explore-button" onclick="window.location.href = 'https://localhost:3001';">Explore Interests</button>
+        <button class="chatbot-button" onclick="window.location.href = 'http://localhost:3000';">Learn More</button>
+    </div>
+
+</div>
+<script src="app.js"></script>
 </body>
+
 </html>
+
+
 <script>
     fetch('navbar.html')
         .then(response => response.text())
