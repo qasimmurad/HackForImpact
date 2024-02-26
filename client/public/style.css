@@ -1,9 +1,27 @@
+h1 {
+    text-align: center;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #FFF9E8 /* background color */
     color: black; /* changing the text color */
+}
+
+.chatbot-button {
+    font-size: 50px; /* Increases the text size inside the button */
+    padding: 35px 50px; /* Adjust padding to make the button larger */
+    background-color: #4CAF50; /* Example background color */
+    color: white; /* Text color */
+    border: none; /* Removes border */
+    border-radius: 5px; /* Adds rounded corners */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+}
+
+.chatbot-button:hover {
+    background-color: #45a049; /* Darker shade on hover */
 }
 
 nav {
