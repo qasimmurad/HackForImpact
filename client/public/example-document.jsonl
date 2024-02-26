@@ -1,0 +1,4 @@
+{"put": "id:mynamespace:my_content::example-document-id","fields": {"text": "A Glorbofel is a kind of crispy pizza popular in the eastern parts of Germany."}}
+{"put": "id:mynamespace:my_content::example-document-id2","fields": {"text": "A gog is a plant not popular in the western parts of the US."}}
+{"put": "id:mynamespace:my_content::example-document-id3","fields": {"text": "Your leadership skills: 95%\n Your financial literacy skills: 50%\n"}}
+
