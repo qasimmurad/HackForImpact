@@ -1,0 +1,37 @@
+{
+  "name": "takehome-mentions",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Notion take-home: the @ mention menu",
+  "workspaces": [
+    "src/client",
+    "src/server"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "seed": "npm run seed --workspace=src/server",
+    "dev": "concurrently -n server,client -c blue,green \"npm:dev:server\" \"npm:dev:client\"",
+    "dev:server": "npm run dev --workspace=src/server",
+    "dev:client": "npm run dev --workspace=src/client",
+    "build": "npm run build --workspace=src/client && npm run package",
+    "package": "node scripts/package-submission.mjs",
+    "test": "npm test --workspace=src/server",
+    "typecheck": "tsc --noEmit --project src/server/tsconfig.tests.json && tsc --noEmit --project src/client/tsconfig.json",
+    "lint": "oxlint",
+    "format": "oxfmt --write src scripts",
+    "format:check": "oxfmt --check src scripts",
+    "check": "npm test && npm run typecheck && npm run lint",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0",
+    "husky": "^9.1.7",
+    "oxfmt": "^0.43.0",
+    "oxlint": "^1.58.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}

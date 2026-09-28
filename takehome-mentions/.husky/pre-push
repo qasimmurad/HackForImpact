@@ -1,0 +1,6 @@
+echo "pre-push: format:check + lint"
+
+npm run format:check || echo "pre-push: formatting issues found (not blocking) — run \`npm run format\`"
+npm run lint || echo "pre-push: lint issues found (not blocking) — run \`npm run lint\`"
+
+exit 0
